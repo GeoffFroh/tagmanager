@@ -168,7 +168,8 @@
       tagCloseIcon: 'x',
       tagClass: '',
       validator: null,
-      onlyTagList: false
+      onlyTagList: false,
+      tagList: null
     });
   </pre>
 
@@ -263,7 +264,12 @@
     </tr>
     <tr>
       <td><b>onlyTagList</b></td>
-      <td>If true, rejects tags which do not appear in the typeahead list. Default: false
+      <td>If true, rejects tags which do not appear in the tagList config variable. Default: false
+      </td>
+    </tr>
+    <tr>
+      <td><b>tagList</b></td>
+      <td>An optional array of allowed tag values for use with onlyTagList option. Warning: values in this array are modified in the validation code. Default: null
       </td>
     </tr>
 	<tr>
